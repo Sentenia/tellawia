@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tellawia — Powered by Sentria</title>
+    <link rel="icon" href="/logo.svg">
+    <style>
+      :root{
+        --bg1:#0b0618; --bg2:#150b2a; --pulseA:#ff00a8; --pulseB:#6c00ff; --card:#ffffff14; --line:#ffffff22;
+      }
+      *{box-sizing:border-box} html,body,#root{height:100%} body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:#fff;background:
+        radial-gradient(900px 700px at 0% 100%, rgba(255,0,168,0.25), transparent 40%),
+        radial-gradient(900px 700px at 100% 0%, rgba(108,0,255,0.22), transparent 45%),
+        linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 100%);
+      }
+      .wrap{max-width:1080px;margin:0 auto;padding:20px 16px 96px}
+      header{position:sticky;top:0;z-index:10;backdrop-filter:blur(8px);background:rgba(0,0,0,.35);border-bottom:1px solid var(--line)}
+      .hinner{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+      .brand{display:flex;align-items:center;gap:10px}
+      .logo{width:32px;height:32px;border-radius:12px;background:linear-gradient(135deg,var(--pulseA),var(--pulseB));display:grid;place-items:center}
+      .sub{opacity:.7;font-size:12px}
+      .controls{display:flex;gap:8px;flex-wrap:wrap}
+      .btn{background:rgba(255,255,255,.08);border:1px solid var(--line);color:#fff;padding:8px 12px;border-radius:12px;cursor:pointer}
+      .btn.on{background:rgba(255,255,255,.18)}
+      .row{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line)}
+      .card{background:var(--card);border:1px solid var(--line);border-radius:16px}
+      .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:16px 0 20px}
+      .p16{padding:16px}
+      h1{margin:12px 0 8px}
+      h2{margin:18px 0 10px}
+      table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+      thead tr{background:rgba(255,255,255,.06)}
+      th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}
+      footer{position:fixed;bottom:0;left:0;right:0;padding:10px 16px;background:rgba(0,0,0,.35);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+      .pill{padding:4px 8px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--line);font-size:12px}
+      .input, textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:rgba(0,0,0,.25);color:#fff}
+      .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+      .muted{opacity:.75}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
