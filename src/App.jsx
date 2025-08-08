@@ -1,1 +1,16 @@
-export default function App(){return 'Tellawia Pulse build placeholder — replace with full code in next message.'}
+import React from 'react';
+import Portfolio from './Portfolio';
+import WalletsPanel from './WalletsPanel';
+import Settings from './Settings';
+import Taxes from './Taxes';
+
+export default function App() {
+  return (
+    <main>
+      <Portfolio />
+      <WalletsPanel />
+      <Taxes />
+      <Settings />
+    </main>
+  );
+}

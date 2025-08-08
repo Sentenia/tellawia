@@ -1,0 +1,1 @@
+export default function Taxes(){ return <div>Tax tab showing realized/unrealized gains</div> }
